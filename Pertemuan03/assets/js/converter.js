@@ -13,6 +13,7 @@ convertButton.addEventListener("click", async function () {
   const fromSelect = document.getElementById("from");
   const toSelect = document.getElementById("to");
   const url = "https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_iq1WvbaON67X9adHTaJiqEszDhP6jtDz7IouUbWv&currencies=" + toSelect.value + "&base_currency=" + fromSelect.value;
+  console.log(url);
   const options = {
     method: "GET",
   };
@@ -20,6 +21,7 @@ convertButton.addEventListener("click", async function () {
   try {
     const response = await fetch(url, options);
     const result = await response.text();
+    console.log(result);
     const amount = document.getElementById("amount").value;
     const rate = result.split(":")[2].split("}")[0];
     const converted = (amount * rate).toLocaleString(undefined, {

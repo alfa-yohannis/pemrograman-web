@@ -1,2 +1,12 @@
 /PPT/**/*.synctex.gz
 /PPT/**/*.pdf
+*.out
+*.vrb
+*.nav
+*.zip
+*.toc
+*.log
+*.snm
+*.aux
+*.fdb_latexmk
+*.fls

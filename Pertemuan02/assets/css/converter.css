@@ -1,4 +1,10 @@
-.container {
+
+/* #leftSection {
+  font-size: 100px;
+  font-style: italic;
+} */
+
+ .container {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,14 +23,24 @@
   width: 60%;
 }
 
-.left-section .title {
-  color: #333;
+.title {
+  color: green;
   font-size: 24px;
   margin-bottom: 20px;
   font-style: oblique;
   font-weight: bold;
   margin-top: 10%;
 }
+
+.left-section .title {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-style: oblique;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
 
 .left-section label,
 .left-section select,
@@ -34,9 +50,10 @@
   border-radius: 45px;
   font-size: 16px;
   margin-bottom: 10px;
-  box-sizing: border-box; /* Add this line */
+  box-sizing: border-box; 
   text-align: center;
 }
+
 
 .left-section button {
   padding: 10px 20px;
@@ -47,6 +64,7 @@
   font-size: 16px;
   margin-bottom: 10px;
 }
+
 .left-section .amount-wrapper,
 .left-section .converter-wrapper,
 .left-section .from-converter-wrapper,
@@ -99,4 +117,4 @@
 .right-section .exchange-rate {
   color: #f7f7f7;
   font-size: 24px;
-}
+} 
