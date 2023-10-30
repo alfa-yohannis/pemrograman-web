@@ -93,6 +93,8 @@ $(document).ready(function () {
         to: toCurrency,
       },
       success: function (result) {
+        console.log(result);
+        console.log(result.rate);
         const rate = result.rate;
         const convertedAmount = (rate * amount).toLocaleString(undefined, {
           minimumFractionDigits: 2,
