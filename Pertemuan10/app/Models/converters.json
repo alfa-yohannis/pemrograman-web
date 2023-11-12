@@ -22,5 +22,13 @@
         "to_currency": "GBP",
         "to_currency_description": "United Kingdom Pound",
         "conversion_rate": 0.87
+    },
+    {
+        "id": 4,
+        "from_currency": "JPY",
+        "from_currency_description": "Japan Yen",
+        "to_currency": "IDR",
+        "to_currency_description": "Indonesian Rupiah",
+        "conversion_rate": "103.36"
     }
 ]

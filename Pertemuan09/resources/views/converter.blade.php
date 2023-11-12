@@ -26,7 +26,7 @@
               <label for="from" class="form-label">From</label>
               <select name="from" id="from" class="form-select rounded-pill text-center w-75">
               @foreach($currencies as $code => $name)
-                <option value="{{ $code }}">{{ $code }} - {{ $name }}</option>
+                <option value="{{ $code }}">{{ $code }} - {{ $name }}</option> <!--{{ $code }}-->
               @endforeach
               </select>
             </div>

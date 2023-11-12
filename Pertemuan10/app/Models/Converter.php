@@ -5,7 +5,8 @@ namespace App\Models;
 class Converter
 {
   // Change the path to the converters.json file
-  private static $filePath = 'C:\xampp7\htdocs\pemrograman web\Pertemuan 10\app\Models\converters.json';
+  // private static $filePath = 'C:\xampp7\htdocs\pemrograman web\Pertemuan 10\app\Models\converters.json';
+  private static $filePath = '/home/alfa/projects/pemrograman-web/Pertemuan10/app/Models/converters.json';
   public static function all()
   {
     $jsonData = file_get_contents(self::$filePath);
