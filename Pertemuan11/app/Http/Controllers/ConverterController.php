@@ -41,7 +41,7 @@ class ConverterController extends Controller
 
         // Create a cookie with the updated value
         $cookie = Cookie::make('accessed_converter', $currentValue, 60); // Expires in 60 minutes
-
+        //echo $cookie;
         return response()->view('converter', $data)->withCookie($cookie);
     }
 

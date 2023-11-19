@@ -71,7 +71,6 @@
         \item Learn how to manage cookies to store small pieces of data in the user's browser.
         \item Explore session management techniques for maintaining user-specific data during their visit.
         \item Discover the differences between cookies and sessions and when to use each approach.
-        \item Implement secure practices in handling cookies and sessions to protect user data.
         \item Apply these concepts in a Laravel application to enhance user experience and functionality.
     \end{itemize}
 \end{frame}
@@ -80,8 +79,8 @@
     \vskip1cm
     \begin{itemize}
         \item Cookies and sessions are crucial concepts in web development for managing user data and state.
-        \item **Cookies** are small pieces of data stored in the user's browser. They are often used for tracking user preferences, authentication tokens, and other client-side data.
-        \item **Sessions** are a server-side mechanism for maintaining user-specific data during their interaction with a website.
+        \item \textbf{Cookies} are small pieces of data stored in the user's browser. They are often used for tracking user preferences, authentication tokens, and other client-side data.
+        \item \textbf{Sessions} are a server-side mechanism for maintaining user-specific data during their interaction with a website.
         \item The main difference: Cookies are stored in the user's browser, while sessions are stored on the server.
         \item Both cookies and sessions play an important role in creating personalized and interactive web experiences.
     \end{itemize}
@@ -95,19 +94,20 @@
         \item in Laravel Project CMD: php artisan ui bootstrap --auth
         \item install NPM Dependency
         \item in Laravel Project CMD (open new cmd):npm install \&\& npm run dev
+        \item Migrate to create database tables: php artisan migrate
         \item Run the Laravel Apps In another CMD: php artisan serve
     \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Set Up Converter Apps}
-    \begin{itemize}
-        \item create a Models in Models Folder Converter.php
-        \item create a file in Model folder called converters.json
-        \item (in CMD) php artisan make:request Converter/StoreConverterRequest
-        \item (in CMD) php artisan make:request Converter/UpdateConverterRequest
-        \item (in CMD) php artisan make:controller API/ConverterController --resource
-    \end{itemize}
-\end{frame}
+%\begin{frame}[fragile]{Set Up Converter Apps}
+%    \begin{itemize}
+%        \item create a Models in Models Folder Converter.php
+%        \item create a file in Model folder called converters.json
+%        \item (in CMD) php artisan make:request Converter/StoreConverterRequest
+%        \item (in CMD) php artisan make:request Converter/UpdateConverterRequest
+%        \item (in CMD) php artisan make:controller API/ConverterController --resource
+%    \end{itemize}
+%\end{frame}
 
 \begin{frame}[fragile]
  \frametitle{ConverterController.php}
