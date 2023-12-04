@@ -35,7 +35,7 @@
                       </div>
                       <div class="mb-3">
                         <label for="conversion_rate" class="form-label">Conversion Rate</label>
-                        <input type="number" class="form-control" id="conversion_rate" name="conversion_rate" value="{{ $converter['conversion_rate'] }}">
+                        <input type="number" class="form-control" step="any" id="conversion_rate" name="conversion_rate" value="{{ $converter['conversion_rate'] }}">
                       </div>
                       <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

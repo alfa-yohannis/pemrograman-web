@@ -63,7 +63,7 @@ class ConverterController extends Controller
             'from_currency_description' => 'required',
             'to_currency' => 'required',
             'to_currency_description' => 'required',
-            'conversion_rate' => 'required|numeric',
+            'conversion_rate' => 'required|decimal:2,4',
         ]);
 
         $data = $request->all();
@@ -100,7 +100,7 @@ class ConverterController extends Controller
             'from_currency_description' => 'required',
             'to_currency' => 'required',
             'to_currency_description' => 'required',
-            'conversion_rate' => 'required|numeric',
+            'conversion_rate' => 'required|decimal:2,4',
         ]);
 
         $data = $request->all();

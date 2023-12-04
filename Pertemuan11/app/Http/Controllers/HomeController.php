@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // set session
+        // set sessiona
         session(['key' => 'value']);
         return view('home');
     }

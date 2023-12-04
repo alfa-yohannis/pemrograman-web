@@ -23,3 +23,7 @@ Route::resource('/converter', ConverterController::class)->except(['show']);
 Route::get('/converter/database', [ConverterController::class, 'database'])->name('converter.database');
 
 Auth::routes();
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

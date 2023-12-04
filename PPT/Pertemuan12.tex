@@ -68,12 +68,11 @@
     \vskip1cm
     \begin{itemize}
         \item Understand the fundamentals of databases and their role in web development.
-        \item Learn about relational databases and their importance in organizing structured data.
-        \item Explore database management systems (DBMS) and their various types.
-        \item Gain insight into the use of SQL (Structured Query Language) for database interactions.
+        \item Exposure on relational database management systems (DBMS).
+%        \item Gain insight into the use of SQL (Structured Query Language) for database interactions.
         \item Learn about creating, reading, updating, and deleting (CRUD) operations on databases.
         \item Explore the concept of database migrations for version control and collaboration.
-        \item Understand the significance of database normalization for efficient data storage.
+%        \item Understand the significance of database normalization for efficient data storage.
         \item Gain hands-on experience by integrating databases with web applications.
     \end{itemize}
 \end{frame}
@@ -94,8 +93,10 @@
     \vskip1cm
     \begin{itemize}
         \item Migration is a version control for the database schema
-        \item In Laravel Project CMD: php artisan make:migration create\_converters\_table
-        \item Running Migration: php artisan migrate (if refresh is : php artisan migrate:refresh)
+        \item In Laravel Project CMD: php artisan make:migration create\_converter\_table
+        \item Running Migration: php artisan migrate 
+        \item Refresh: php artisan migrate:refresh
+        \item Rollback: php artisan migrate:rollback
         \item Code in Next Slide
     \end{itemize}
 \end{frame}
@@ -111,9 +112,10 @@
 \begin{frame}{Seeder Laravel}
     \vskip1cm
     \begin{itemize}
-        \item Seeder allow you easily populate your database with sample or default data.
+        \item Seeder allows you to easily populate your database with sample/default data.
         \item In Laravel Project CMD: php artisan make:seeder ConverterSeeder
-        \item Code in Next Slide
+        \item Runing the seeder: php artisan db:seed --class=ConverterSeeder
+        \item Code is in the next slide
     \end{itemize}
 \end{frame}
 
@@ -130,8 +132,8 @@
     \begin{itemize}
         \item Models provide an abstraction layer that simplifies database interactions and promotes good coding practices.
         \item In Laravel Project CMD: php artisan make:model Converter
-        \item Old Converter model change the name to Converter\_.php or remove it
-        \item Code in Next Slide
+        \item Change the name of the Old Converter model to Converter\_.php or remove it
+        \item Code is in the next slide
     \end{itemize}
 \end{frame}
 
